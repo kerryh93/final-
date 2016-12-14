@@ -2,6 +2,7 @@ package rocketBase;
 
 import static org.junit.Assert.*;
 
+
 import java.util.ArrayList;
 
 import org.junit.Test;
@@ -24,7 +25,12 @@ public class Rate_Test {
 		System.out.println ("Rates size: " + rates.size());
 		assert(rates.size() > 0);
 		
-		assert(1==1);
+		for(RateDomainModel model: rates){
+			System.out.println(model);
+
+				
+			}
+		assertTrue(rates.size() > 0);
 	}
 
 }
